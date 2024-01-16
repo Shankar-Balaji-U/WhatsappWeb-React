@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?tbh8rb');
+  src:  url('fonts/icomoon.eot?tbh8rb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tbh8rb') format('truetype'),
+    url('fonts/icomoon.woff?tbh8rb') format('woff'),
+    url('fonts/icomoon.svg?tbh8rb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i[class^="ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-back-arrow:before {
+  content: "\e902";
+}
+.ico-audio-play:before {
+  content: "\e91f";
+}
+.ico-chevron-down-alt:before {
+  content: "\e920";
+}
+.ico-recalled:before {
+  content: "\e921";
+}
+.ico-status-check:before {
+  content: "\e922";
+}
+.ico-status-mic:before {
+  content: "\e92d";
+}
+.ico-status-vcard:before {
+  content: "\e92e";
+}
+.ico-status-video:before {
+  content: "\e92f";
+}
+.ico-video-call:before {
+  content: "\e930";
+}
+.ico-pinned2:before {
+  content: "\e931";
+}
+.ico-status-document:before {
+  content: "\e932";
+}
+.ico-muted:before {
+  content: "\e933";
+}
+.ico-default-group-avatar .path1:before {
+  content: "\e900";
+  color: ;
+}
+.ico-default-group-avatar .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ico-default-user-avatar .path1:before {
+  content: "\e903";
+  color: ;
+}
+.ico-default-user-avatar .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ico-default-user-avatar .path3:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ico-alert-internet:before {
+  content: "\e905";
+}
+.ico-alert-notification:before {
+  content: "\e906";
+}
+.ico-arrow-right:before {
+  content: "\e907";
+}
+.ico-bear:before {
+  content: "\e908";
+}
+.ico-bulb:before {
+  content: "\e909";
+}
+.ico-camera:before {
+  content: "\e90a";
+}
+.ico-car:before {
+  content: "\e90b";
+}
+.ico-new-chat:before {
+  content: "\e90c";
+}
+.ico-clipper:before {
+  content: "\e90d";
+}
+.ico-crop-r-rotate:before {
+  content: "\e90e";
+}
+.ico-cup:before {
+  content: "\e90f";
+}
+.ico-desktop:before {
+  content: "\e910";
+}
+.ico-filter:before {
+  content: "\e911";
+}
+.ico-flag:before {
+  content: "\e912";
+}
+.ico-football:before {
+  content: "\e913";
+}
+.ico-hash-button:before {
+  content: "\e914";
+}
+.ico-lock:before {
+  content: "\e915";
+}
+.ico-message-disappear:before {
+  content: "\e916";
+}
+.ico-tail-out:before {
+  content: "\e918";
+}
+.ico-message-pending:before {
+  content: "\e919";
+}
+.ico-microphone:before {
+  content: "\e91a";
+}
+.ico-arrow-curved-left:before {
+  content: "\e91b";
+}
+.ico-arrow-curved-right:before {
+  content: "\e91c";
+}
+.ico-pixelate:before {
+  content: "\e91d";
+}
+.ico-option:before {
+  content: "\e923";
+}
+.ico-paper-plane:before {
+  content: "\e924";
+}
+.ico-pen:before {
+  content: "\e925";
+}
+.ico-recent:before {
+  content: "\e926";
+}
+.ico-search:before {
+  content: "\e927";
+}
+.ico-seen-tick:before {
+  content: "\e928";
+}
+.ico-smiley:before {
+  content: "\e929";
+}
+.ico-status:before {
+  content: "\e92a";
+}
+.ico-sticker:before {
+  content: "\e92b";
+}
+.ico-text:before {
+  content: "\e92c";
+}

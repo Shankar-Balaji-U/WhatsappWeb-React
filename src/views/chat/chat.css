@@ -1,0 +1,167 @@
+@tailwind components;
+
+
+.chat-window {
+    @apply flex relative xl:container;
+    @apply bg-orange-75 dark:bg-cyan-1045;
+    @apply w-full min-w-[748px] xl:max-w-screen-2xl h-full mx-auto px-0;
+    @apply shadow-lg;
+    @apply border border-gray-200 dark:border-gray-800;
+    @apply animate-scalein;
+}
+
+.chat-container,
+.message-container {
+    @apply flex flex-col;
+}
+
+.chat-container {
+    @apply border-e dark:border-gray-700;
+}
+
+.message-container {
+    @apply w-full h-full;
+}
+
+.message-container .nav-bar {
+    @apply shadow;
+}
+
+.chat-box-container {
+    @apply flex flex-1;
+}
+
+.chat-box-container::after {
+    content: '';
+    @apply bg-[url('../../static/image/bg-chat-tile-dark.png')];
+    @apply w-full h-full bg-repeat opacity-40;
+}
+
+.chat-window.two .chat-container,
+.chat-window.three .chat-container {
+    @apply grow-0 shrink-0;
+    @apply basis-[45%] max-w-[45%];
+    @apply sm:basis-[40%] sm:max-w-[40%] sm:min-w-[45%];
+    @apply lg:basis-[30%] lg:max-w-[30%] lg:min-w-[35%];
+    @apply xl:min-w-[30%];
+}
+
+.chat-window.two .message-container,
+.chat-window.three .message-container
+ {
+}
+
+@media screen and (min-width: 1441px) {
+    .chat-window {
+        top: 19px;
+        width: calc(100% - 38px);
+        max-width: 1600px;
+        height: calc(100% - 38px);    
+    }
+}
+
+.chat-search, .nav-bar {
+    @apply flex w-full;
+}
+
+.chat-search {
+    @apply py-2 ps-3 bg-white dark:bg-cyan-1040;
+}
+
+.filter-button {
+    width: 26px;
+    height: 26px;
+    @apply mx-2 my-auto aria-selected:text-white aria-selected:bg-emerald-500;
+/*    @apply px-4 text-gray-500;*/
+}
+
+.nav-bar,
+.feature-buttons {
+    @apply flex justify-between;
+}
+
+.nav-bar {
+    @apply bg-zinc-100 dark:bg-cyan-1010 px-4 py-2;
+}
+
+.feature-buttons button:not(:first-child) {
+    @apply ms-3;
+}
+
+.chat-list {
+    @apply p-0 m-0 grow overflow-y-auto scroll-smooth;
+}
+
+.chat-list-item-container {
+    @apply flex min-h-18 bg-white hover:bg-zinc-50 focus:bg-zinc-50 aria-selected:bg-stone-100;
+    @apply dark:bg-cyan-1040 dark:hover:bg-cyan-1010 dark:focus:bg-cyan-1010 dark:aria-selected:bg-cyan-990;
+}
+
+.chat-list-item-container .avatar {
+    @apply flex items-center px-3;
+}
+
+.chat-list-item-container .content {
+    @apply flex flex-col justify-center flex-1 pe-4;
+}
+
+.chat-list-item:not(:first-child) .content {
+    @apply border-t dark:border-cyan-990;
+}
+
+.chat-list-item .content > div {
+    @apply flex;
+}
+
+.chat-list-item .content .profile-title,
+.chat-list-item .content .last-message {
+    @apply flex-1 truncate;
+}
+
+.chat-list-item .content .profile-title {
+    @apply text-lg text-gray-950 dark:text-gray-300;
+}
+
+.chat-list-item .content .chat-user-option {
+    @apply flex items-end;
+}
+
+
+.chat-list-item .content .last-message-datetime {
+    @apply flex items-end text-xs capitalize;
+}
+
+.chat-list-item .content .last-message,
+.chat-list-item .content .last-message-datetime {
+    @apply text-slate-500 dark:text-slate-400;
+}
+
+.chat-list-item[data-newchat="true"] .content .last-message-datetime {
+    @apply text-green-500 dark:text-emerald-500 font-semibold;
+}
+
+.chat-list-item[data-newchat="true"] .content .last-message {
+    @apply text-gray-600 font-semibold;
+}
+
+.chat-input-container {
+    @apply w-full flex px-4 py-2;
+}
+
+.input-box-container {
+    @apply text-gray-300;
+    @apply w-full py-[9px] px-3 my-[5px] mx-2;
+    @apply flex flex-1 rounded-lg border dark:border-cyan-990;
+}
+
+.form-chatbox {
+    @apply w-full max-h-[7.35em] min-h-[1.47em];
+    @apply select-text overflow-x-hidden overflow-y-auto;
+    @apply font-[0.9375rem];
+    @apply break-all cursor-text;
+}
+
+.form-chatbox:empty::after {
+    content: attr(placeholder);
+    @apply font-light text-slate-400;
+}

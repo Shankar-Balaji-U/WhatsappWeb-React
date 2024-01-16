@@ -1,0 +1,89 @@
+@tailwind components;
+
+
+@layer components {
+  .absolute-center {
+    /* Center the container with position absolute */
+    @apply w-full h-full;
+    @apply absolute top-1/2 left-1/2;
+    @apply translate-x-[-50%];
+    @apply translate-y-[-50%];
+  }
+}
+
+.search-container {
+  @apply py-1.5;
+  @apply rounded-md overflow-hidden;
+}
+
+.search-container, .form-search {
+  @apply inline-flex w-full;
+  @apply bg-zinc-100 dark:bg-cyan-1010;
+}
+
+.search-container .button-holder {
+  @apply w-14 relative shrink-0 basis-14;
+}
+
+input[type="search"], .form-search {
+  @apply outline-none p-0 dark:text-slate-400;
+}
+
+input[type="search"]::-webkit-search-cancel-button, 
+.form-search::-webkit-search-cancel-button {
+  height: 1em;
+  width: 1em;
+  @apply ps-4 rounded-[50em] appearance-none;
+  @apply bg-contain opacity-0 pointer-events-none;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='7 3 10 17' class=''%3e%3cpath d='M17.25 7.8 16.2 6.75l-4.2 4.2-4.2-4.2L6.75 7.8l4.2 4.2-4.2 4.2 1.05 1.05 4.2-4.2 4.2 4.2 1.05-1.05-4.2-4.2 4.2-4.2z'%3e%3c/path%3e%3c/svg%3e") no-repeat 50% 50%;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button, 
+.form-search:focus::-webkit-search-cancel-button {
+  @apply opacity-30;
+  filter: invert(1);
+  pointer-events: all;
+}
+
+.search-container button {
+  @apply flex relative w-full h-full;
+  @apply bg-transparent text-gray-600;
+  @apply border-none z-50;
+}
+
+.search-container button i {
+  @apply w-full h-full flex justify-center items-center absolute text-sm;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-container i.ico-search {
+/*  font-size: medium;*/
+  transition-duration: 0.24s;
+  @apply rotate-0;
+}
+
+
+.search-container[aria-selected="true"] i.ico-search {
+  transition-delay: 0.06s;
+  @apply rotate-[135deg];
+}
+
+.search-container i.ico-back-arrow {
+  @apply pointer-events-none text-emerald-700;
+  transition-duration: 0.3s;
+  @apply rotate-[225deg];
+}
+.search-container[aria-selected="true"] i.ico-back-arrow {
+  @apply rotate-[1turn];
+}
+
+.search-container i.ico-search,
+.search-container[aria-selected="true"] i.ico-back-arrow {
+  @apply opacity-100;
+}
+
+.search-container i.ico-back-arrow,
+.search-container[aria-selected="true"] i.ico-search {
+  @apply opacity-0;
+}

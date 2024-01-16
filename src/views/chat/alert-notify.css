@@ -1,0 +1,16 @@
+.alert-notify-container {
+	@apply flex items-center p-4; /*  min-h-[62px] */
+}
+.alert-notify-container[data-status="false"] {
+	@apply hidden;
+}
+.alert-notify-container[data-status="network"] {
+	@apply bg-amber-400 dark:bg-teal-950;
+}
+
+.alert-notify-container .icon {
+	@apply pe-4 text-amber-50 dark:text-amber-400 text-5xl;
+}
+.alert-notify-container .message {
+	@apply flex flex-1 flex-col justify-center text-slate-800 dark:text-gray-500;
+}

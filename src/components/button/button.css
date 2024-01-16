@@ -1,0 +1,29 @@
+.button {
+  @apply inline-block px-6 py-2.5 whitespace-nowrap rounded-3xl font-medium shadow-md;
+}
+
+.button .context {
+  @apply flex leading-tight text-sm;
+}
+
+.button.primary {
+  @apply text-white dark:text-cyan-1050 bg-emerald-700 dark:bg-emerald-500;
+  @apply active:bg-emerald-600 aria-selected:bg-emerald-600;
+}
+
+.button.info {
+	@apply text-slate-600 dark:text-white bg-white dark:bg-slate-600;
+  	@apply active:bg-gray-50 aria-selected:bg-gray-50 dark:active:bg-slate-700 dark:aria-selected:bg-slate-700 dark:active:text-slate-200 dark:aria-selected:text-slate-200;
+}
+
+.round-button {
+	width: 40px;
+	height: 40px;
+	@apply transition-colors;
+	@apply text-gray-600 dark:text-slate-400 aria-selected:bg-zinc-300 active:bg-zinc-300;
+	@apply flex p-2 justify-center content-center items-center rounded-full;
+}
+
+.profile-button {
+	@apply rounded-full;
+}

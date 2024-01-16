@@ -1,0 +1,4 @@
+.badge {
+  @apply inline-block px-[0.4em] pt-[0.3em] pb-[0.4em] min-w-[1em] min-h-[1em] font-semibold rounded-full leading-none;
+  @apply align-top text-center text-white dark:text-cyan-1050 bg-green-500 dark:bg-emerald-500;
+}

@@ -1,0 +1,7 @@
+.avatar-container {
+	@apply rounded-full overflow-hidden;
+}
+
+.avatar-container img {
+	@apply w-full h-full;
+}
